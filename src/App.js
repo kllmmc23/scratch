@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const buttonText = "Click me";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <label htmlFor="name" className="label">
+        enter e-mail
+      </label>{" "}
+      <input type="text" name="email" id="name" />
+      <button type="submit" style={{ backgroundColor: "red", color: "white" }}>
+        {buttonText}
+      </button>
     </div>
   );
-}
+};
 
 export default App;
